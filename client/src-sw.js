@@ -1,6 +1,6 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst } = require('workbox-strategies');
+const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
+const { warmStrategyCache } = require('workbox-recipes');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
@@ -26,24 +26,18 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching
-// CacheableResponsePlugin
-
-// Define a route to cache responses
 registerRoute(
-  // This matches any requests that end in .jpg, .png, .svg, .mp3, or .json
-  ({request}) => request.destination === 'style' ||
-                request.destination === 'script' ||
-                request.destination === 'worker',
-
-  // Use the CacheFirst strategy with the CacheableResponsePlugin
-  new CacheFirst({
-    cacheName: 'my-cache',
+  // Here we define the callback function that will filter the requests we want to cache (in this case, JS and CSS files)
+  ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
+  new StaleWhileRevalidate({
+    // Name of the cache storage.
+    cacheName: 'asset-cache',
     plugins: [
+      // This plugin will cache responses with these headers to a maximum-age of 30 days
       new CacheableResponsePlugin({
-        statuses: [0, 200]  // Cache responses with status codes 0 and 200
-      })
-    ]
+        statuses: [0, 200],
+      }),
+    ],
   })
 );
 
