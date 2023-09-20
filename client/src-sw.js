@@ -41,9 +41,4 @@ registerRoute(
   })
 );
 
-
-
-
-
-
-registerRoute();
+// registerRoute();
