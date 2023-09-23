@@ -3,7 +3,7 @@
 
 ## Table of Contents
   - [Description](#description)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Link](#link)
@@ -13,7 +13,7 @@
 This app is a text editor that runs in the browser. The app is a single-page application that meets the PWA criteria.
 It is getting and storing data to an IndexedDB database. 
 
-## Screenshot
+## Screenshots
 This application can run form Visual Studio Code by using npm run start:dev. <br/> <br/>
 ![localhost](./assets/Screenshot_pwa_app.png) <br/> <br/> 
 
