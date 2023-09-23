@@ -15,4 +15,4 @@ It is getting and storing data to an IndexedDB database.
 
 ## Screenshot
 This appliation can run form Visual Studio Code by using npm run start:dev. <br/> <br/>
-![localhost](./assets/Screenshot-TechBlog.png) <br/> <br/> 
+![localhost](/assets/Screenshot_ServiceWorkers.png) <br/> <br/> 
