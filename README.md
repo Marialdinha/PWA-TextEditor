@@ -14,5 +14,14 @@ This app is a text editor that runs in the browser. The app is a single-page app
 It is getting and storing data to an IndexedDB database. 
 
 ## Screenshot
-This appliation can run form Visual Studio Code by using npm run start:dev. <br/> <br/>
-![localhost](/assets/Screenshot_ServiceWorkers.png) <br/> <br/> 
+This application can run form Visual Studio Code by using npm run start:dev. <br/> <br/>
+![localhost](./assets/Screenshot_pwa_app.png) <br/> <br/> 
+
+Manifest <br/> <br/>
+![localhost](./assets/Screenshot_manifest.png) <br/> <br/> 
+
+Sevice Worker <br/> <br/>
+![localhost](./assets/Screenshot_ServiceWorkers.png) <br/> <br/> 
+
+IndexDB with installed application <br/> <br/>
+![localhost](./assets/Screenshot_Ins_IndexedDB.png) <br/> <br/> 
