@@ -30,7 +30,13 @@ IndexDB with installed application <br/> <br/>
 1 - On termina: npm i <br/>
 2 - On termina: npm run build<br/>
 3 - On termina: npm run start:dev <br/>
-4 - User can instal application by clicking "Install" button 
+4 - User can install application by clicking "Install" button 
 
 ## Usage
 User can enter text as in any regular text editor.
+
+## Link
+https://techblog-challenge-b189a614db53.herokuapp.com/
+
+## Contact
+You can contact me via email: marialda@bellsouth.net
