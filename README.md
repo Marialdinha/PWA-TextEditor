@@ -36,7 +36,7 @@ IndexDB with installed application <br/> <br/>
 User can enter text as in any regular text editor.
 
 ## Link
-https://techblog-challenge-b189a614db53.herokuapp.com/
+https://desolate-chamber-93287-1c5197274c33.herokuapp.com/
 
 ## Contact
 You can contact me via email: marialda@bellsouth.net
