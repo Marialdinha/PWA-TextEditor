@@ -36,7 +36,7 @@ IndexDB with installed application <br/> <br/>
 User can enter text as in any regular text editor.
 
 ## Link
-https://desolate-chamber-93287-1c5197274c33.herokuapp.com/
+https://pwa-mc-texteditor-1e5725365e87.herokuapp.com/
 
 ## Contact
 You can contact me via email: marialda@bellsouth.net
